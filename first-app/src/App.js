@@ -1,7 +1,7 @@
 import React from 'react';
 import ExpenseItem from './components/ExpenseItem';
 
-function App() {
+const  App = () => {
     // Create an array of expenses
     const expenses = [
         { id: 1, description: 'Food', amount: 10, location: 'Home' },
