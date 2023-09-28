@@ -1,20 +1,20 @@
-import React from "react";
+import React from 'react';
 
-const ExpenseItem =(props) => {
-  // Define the LocationOfExpenditure variable
-  const LocationOfExpenditure = "Home"; // You can change this to the actual location
-  const { title, amount } = props;
+const ExpenseItem = (props) => {
+  const { id, description, amount, location, onDelete } = props;
+
+  const handleDeleteExpense = () => {
+    onDelete(id);
+  };
 
   return (
     <div>
-      {/* Display the LocationOfExpenditure on the screen */}
-      <h2>Location of Expenditure: {LocationOfExpenditure}</h2>
-
-      {/* List of expenses */}
-      <h3>Title: {title}</h3>
+      <h2>Location of Expenditure: {location}</h2>
+      <h3>Title: {description}</h3>
       <h3>Amount: {amount}</h3>
+      <button onClick={handleDeleteExpense}>Delete Expense</button>
     </div>
   );
-}
+};
 
 export default ExpenseItem;
