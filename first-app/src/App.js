@@ -1,12 +1,9 @@
-// Import the necessary React library function
 import React from 'react';
 
-// Import the Expenses component
+import NewExpense from './components/NewExpense/NewExpense';
 import Expenses from './components/Expenses/Expenses';
 
-// Define the App functional component
 const App = () => {
-  // Define an array of expense objects
   const expenses = [
     {
       id: 'e1',
@@ -29,17 +26,19 @@ const App = () => {
     },
   ];
 
-  // Return JSX for rendering the App component
+  // return React.createElement(
+  //   'div',
+  //   {},
+  //   React.createElement('h2', {}, "Let's get started!"),
+  //   React.createElement(Expenses, { items: expenses })
+  // );
+
   return (
     <div>
-      {/* Render an h2 element with the text "Let's get started!" */}
-      <h2>Let's get started!</h2>
-
-      {/* Render the Expenses component and pass the 'expenses' array as a prop */}
+      <NewExpense />
       <Expenses items={expenses} />
     </div>
   );
 }
 
-// Export the App component as the default export
 export default App;
