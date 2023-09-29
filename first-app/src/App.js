@@ -1,35 +1,45 @@
-import React, { useState } from 'react';
-import ExpenseItem from './components/ExpenseItem';
+// Import the necessary React library function
+import React from 'react';
 
+// Import the Expenses component
+import Expenses from './components/Expenses/Expenses';
+
+// Define the App functional component
 const App = () => {
-  const [expenses, setExpenses] = useState([
-    { id: 1, description: 'Food', amount: 10, location: 'Home' },
-    { id: 2, description: 'Petrol', amount: 100, location: 'Gas Station' },
-    { id: 3, description: 'Movies', amount: 200, location: 'Cinema' },
-    // Add more expenses as needed
-  ]);
+  // Define an array of expense objects
+  const expenses = [
+    {
+      id: 'e1',
+      title: 'Toilet Paper',
+      amount: 94.12,
+      date: new Date(2020, 7, 14),
+    },
+    { id: 'e2', title: 'New TV', amount: 799.49, date: new Date(2021, 2, 12) },
+    {
+      id: 'e3',
+      title: 'Car Insurance',
+      amount: 294.67,
+      date: new Date(2021, 2, 28),
+    },
+    {
+      id: 'e4',
+      title: 'New Desk (Wooden)',
+      amount: 450,
+      date: new Date(2021, 5, 12),
+    },
+  ];
 
-  const handleDeleteExpense = (id) => {
-    setExpenses((prevExpenses) =>
-      prevExpenses.filter((expense) => expense.id !== id)
-    );
-  };
-
+  // Return JSX for rendering the App component
   return (
     <div>
-      <h1>Expense Items</h1>
-      {expenses.map((expense) => (
-        <ExpenseItem
-          key={expense.id}
-          id={expense.id}
-          description={expense.description}
-          amount={expense.amount}
-          location={expense.location}
-          onDelete={handleDeleteExpense}
-        />
-      ))}
+      {/* Render an h2 element with the text "Let's get started!" */}
+      <h2>Let's get started!</h2>
+
+      {/* Render the Expenses component and pass the 'expenses' array as a prop */}
+      <Expenses items={expenses} />
     </div>
   );
-};
+}
 
+// Export the App component as the default export
 export default App;
