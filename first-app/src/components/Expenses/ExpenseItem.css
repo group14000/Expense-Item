@@ -1,53 +1,108 @@
+/* Define styles for elements with the class 'expense-item' */
 .expense-item {
+  /* Display the content as a flex container with space-between alignment */
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  /* Add padding around the element */
   padding: 0.5rem;
+
+  /* Add vertical margin for spacing between expense items */
   margin: 1rem 0;
+
+  /* Set the background color to a dark gray */
   background-color: #4b4b4b;
 }
 
+/* Define styles for elements with the class 'expense-item__description' */
 .expense-item__description {
+  /* Display the content as a flex container with column direction */
   display: flex;
   flex-direction: column;
+
+  /* Add spacing between child elements */
   gap: 1rem;
+
+  /* Align child elements to the end of the container */
   align-items: flex-end;
+
+  /* Reverse the order of child elements in the column */
   flex-flow: column-reverse;
+
+  /* Justify child elements to the start of the container */
   justify-content: flex-start;
+
+  /* Allow the container to expand within its parent */
   flex: 1;
 }
 
+/* Style 'h2' elements within elements with the class 'expense-item' */
 .expense-item h2 {
+  /* Set the text color to a dark gray */
   color: #3a3a3a;
+
+  /* Set the font size to 1rem */
   font-size: 1rem;
+
+  /* Allow the element to expand within its parent */
   flex: 1;
+
+  /* Add horizontal margin for spacing */
   margin: 0 1rem;
+
+  /* Set the text color to white */
   color: white;
 }
 
+/* Define styles for elements with the class 'expense-item__price' */
 .expense-item__price {
+  /* Set the font size to 1rem */
   font-size: 1rem;
+
+  /* Set the font weight to bold */
   font-weight: bold;
+
+  /* Set the text color to white */
   color: white;
+
+  /* Set the background color to a dark purple */
   background-color: #40005d;
+
+  /* Add a white border with a 1px solid line */
   border: 1px solid white;
+
+  /* Add padding around the element */
   padding: 0.5rem;
+
+  /* Apply rounded corners with a radius of 12px */
   border-radius: 12px;
 }
 
+/* Media query for screens with a minimum width of 580px */
 @media (min-width: 580px) {
+  /* Adjust styles for elements with the class 'expense-item__description' within the media query */
   .expense-item__description {
+    /* Change flex direction to row */
     flex-direction: row;
+
+    /* Align child elements to the center vertically and justify to the start */
     align-items: center;
     justify-content: flex-start;
+
+    /* Allow the container to expand within its parent */
     flex: 1;
   }
 
+  /* Adjust styles for 'h2' elements within elements with the class 'expense-item' within the media query */
   .expense-item__description h2 {
+    /* Increase font size to 1.25rem */
     font-size: 1.25rem;
   }
 
+  /* Adjust styles for elements with the class 'expense-item__price' within the media query */
   .expense-item__price {
+    /* Increase font size and add horizontal padding */
     font-size: 1.25rem;
     padding: 0.5rem 1.5rem;
   }

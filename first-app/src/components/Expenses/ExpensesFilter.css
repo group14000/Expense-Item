@@ -1,24 +1,48 @@
+/* Define styles for elements with the class 'expenses-filter' */
 .expenses-filter {
+  /* Set the text color to white */
   color: white;
+
+  /* Add horizontal padding to the element */
   padding: 0 1rem;
 }
 
+/* Define styles for elements with the class 'expenses-filter__control' */
 .expenses-filter__control {
+  /* Display the content as a flex container */
   display: flex;
+
+  /* Set the width to 100% of the container */
   width: 100%;
+
+  /* Center-align child elements both vertically and horizontally */
   align-items: center;
   justify-content: space-between;
+
+  /* Add vertical margin (space above and below) */
   margin: 1rem 0;
 }
 
+/* Define styles for label elements within elements with the class 'expenses-filter' */
 .expenses-filter label {
+  /* Set the font weight to bold */
   font-weight: bold;
+
+  /* Add a margin below the label */
   margin-bottom: 0.5rem;
 }
 
+/* Define styles for select elements within elements with the class 'expenses-filter' */
 .expenses-filter select {
+  /* Use the inherited font styles */
   font: inherit;
+
+  /* Add padding to the select element */
   padding: 0.5rem 3rem;
+
+  /* Set the font weight to bold */
   font-weight: bold;
+
+  /* Apply rounded corners with a radius of 6px */
   border-radius: 6px;
 }

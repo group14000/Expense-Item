@@ -1,38 +1,82 @@
+/* Define styles for elements with the class 'new-expense' */
 .new-expense {
+  /* Set the background color to a purplish shade */
   background-color: #a892ee;
+
+  /* Add padding around the content */
   padding: 1rem;
+
+  /* Center the element horizontally and add space around it */
   margin: 2rem auto;
+
+  /* Set the maximum width of the element to 50rem (500px) */
   width: 50rem;
+
+  /* Limit the maximum width to 95% of its container */
   max-width: 95%;
+
+  /* Apply rounded corners with a radius of 12px */
   border-radius: 12px;
+
+  /* Center the text content horizontally */
   text-align: center;
+
+  /* Add a box shadow for a subtle elevation effect */
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
 }
 
+/* Define styles for buttons within elements with the class 'new-expense' */
 .new-expense button {
+  /* Use the inherited font styles */
   font: inherit;
+
+  /* Use a pointer cursor for button elements */
   cursor: pointer;
+
+  /* Add padding to the button for spacing */
   padding: 1rem 2rem;
+
+  /* Add a 1px solid border with a color of #40005d */
   border: 1px solid #40005d;
+
+  /* Set the background color to a purplish shade */
   background-color: #40005d;
+
+  /* Set the text color to white */
   color: white;
+
+  /* Apply rounded corners with a radius of 12px */
   border-radius: 12px;
+
+  /* Add margin to the right for spacing between buttons */
   margin-right: 1rem;
 }
 
+/* Define hover and active styles for buttons within elements with the class 'new-expense' */
 .new-expense button:hover,
 .new-expense button:active {
+  /* Change the background color on hover and active states */
   background-color: #510674;
+
+  /* Change the border color on hover and active states */
   border-color: #510674;
 }
 
+/* Define styles for buttons with the class 'alternative' within elements with the class 'new-expense' */
 .new-expense button.alternative {
+  /* Set the text color to a dark purplish shade */
   color: #220131;
+
+  /* Make the border transparent */
   border-color: transparent;
+
+  /* Make the background color transparent */
   background-color: transparent;
 }
 
+/* Define hover and active styles for buttons with the class 'alternative' within elements with the class 'new-expense' */
 .new-expense button.alternative:hover,
 .new-expense button.alternative:active {
+  /* Change the background color on hover and active states to a light purplish shade */
   background-color: #ddb3f8;
 }

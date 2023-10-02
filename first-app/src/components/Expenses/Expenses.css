@@ -1,7 +1,17 @@
+/* Define styles for elements with the class 'expenses' */
 .expenses {
+  /* Add padding around the element */
   padding: 1rem;
+
+  /* Set the background color to a dark gray */
   background-color: rgb(31, 31, 31);
+
+  /* Add vertical margin (space above and below) and center horizontally with 'auto' margin */
   margin: 2rem auto;
+
+  /* Set a fixed width of 50rem (500px) */
   width: 50rem;
+
+  /* Limit the maximum width to 95% of the parent container */
   max-width: 95%;
 }

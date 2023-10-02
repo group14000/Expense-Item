@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState } from 'react'; // Import React library and useState hook
 
-import NewExpense from './components/NewExpense/NewExpense';
-import Expenses from './components/Expenses/Expenses';
+import NewExpense from './components/NewExpense/NewExpense'; // Import the NewExpense component
+import Expenses from './components/Expenses/Expenses'; // Import the Expenses component
 
+// Define dummy expense data as an array of objects
 const DUMMY_EXPENSES = [
   {
     id: 'e1',
@@ -25,28 +26,24 @@ const DUMMY_EXPENSES = [
   },
 ];
 
-const App = () => {
-  const [expenses, setExpenses] = useState(DUMMY_EXPENSES);
+const App = () => { // Define the main App component
+  const [expenses, setExpenses] = useState(DUMMY_EXPENSES); // Initialize state for expenses using the dummy data
 
   const addExpenseHandler = (expense) => {
+    // Handler function to add a new expense to the list of expenses
     setExpenses((prevExpenses) => {
-      return [expense, ...prevExpenses];
+      return [expense, ...prevExpenses]; // Create a new array with the new expense at the beginning
     });
   };
 
-  // return React.createElement(
-  //   'div',
-  //   {},
-  //   React.createElement('h2', {}, "Let's get started!"),
-  //   React.createElement(Expenses, { items: expenses })
-  // );
-
   return (
     <div>
+      {/* Render the NewExpense component and pass the addExpenseHandler function as a prop */}
       <NewExpense onAddExpense={addExpenseHandler} />
+      {/* Render the Expenses component and pass the list of expenses as a prop */}
       <Expenses items={expenses} />
     </div>
   );
 };
 
-export default App;
+export default App; // Export the App component as the root component of the application

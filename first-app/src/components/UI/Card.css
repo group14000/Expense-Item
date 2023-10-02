@@ -1,4 +1,8 @@
+/* Define styles for elements with the class 'card' */
 .card {
-    border-radius: 12px;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
-  }
+  /* Apply rounded corners with a radius of 12px */
+  border-radius: 12px;
+
+  /* Add a box shadow for a subtle elevation effect */
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+}

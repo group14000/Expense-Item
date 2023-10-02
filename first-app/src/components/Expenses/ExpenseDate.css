@@ -1,26 +1,50 @@
+/* Define styles for elements with the class 'expense-date' */
 .expense-date {
+  /* Display the content as a column (top to bottom) */
   display: flex;
   flex-direction: column;
+
+  /* Set a fixed width and height of 5.5rem */
   width: 5.5rem;
   height: 5.5rem;
+
+  /* Add a 1px solid border with a light gray color */
   border: 1px solid #ececec;
+
+  /* Set the background color to a dark gray */
   background-color: #2a2a2a;
+
+  /* Set the text color to white */
   color: white;
+
+  /* Apply rounded corners with a radius of 12 pixels */
   border-radius: 12px;
+
+  /* Center-align child elements both horizontally and vertically */
   align-items: center;
   justify-content: center;
 }
 
+/* Define styles for elements with the class 'expense-date__month' */
 .expense-date__month {
+  /* Set the font size to 0.75rem (relative to the parent font size) */
   font-size: 0.75rem;
+
+  /* Set the font weight to bold */
   font-weight: bold;
 }
 
+/* Define styles for elements with the class 'expense-date__year' */
 .expense-date__year {
+  /* Set the font size to 0.75rem (relative to the parent font size) */
   font-size: 0.75rem;
 }
 
+/* Define styles for elements with the class 'expense-date__day' */
 .expense-date__day {
+  /* Set the font size to 1.5rem (relative to the parent font size) */
   font-size: 1.5rem;
+
+  /* Set the font weight to bold */
   font-weight: bold;
 }

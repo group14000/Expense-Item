@@ -1,26 +1,56 @@
+/* Define styles for elements with the class 'new-expense__controls' */
 .new-expense__controls {
+  /* Display the content as a flex container */
   display: flex;
+
+  /* Allow content to wrap onto multiple lines */
   flex-wrap: wrap;
+
+  /* Add spacing between child elements */
   gap: 1rem;
+
+  /* Add space below the element */
   margin-bottom: 1rem;
+
+  /* Align text to the left within the container */
   text-align: left;
 }
 
+/* Define styles for label elements within elements with the class 'new-expense__control' */
 .new-expense__control label {
+  /* Set the font weight to bold */
   font-weight: bold;
+
+  /* Add space below the label */
   margin-bottom: 0.5rem;
+
+  /* Display the label as a block-level element */
   display: block;
 }
 
+/* Define styles for input elements within elements with the class 'new-expense__control' */
 .new-expense__control input {
+  /* Use the inherited font styles */
   font: inherit;
+
+  /* Add padding to the input element */
   padding: 0.5rem;
+
+  /* Apply rounded corners with a radius of 6px */
   border-radius: 6px;
+
+  /* Add a 1px solid border with a color of #ccc */
   border: 1px solid #ccc;
+
+  /* Set the width of the input element to 20rem (200px) */
   width: 20rem;
+
+  /* Limit the maximum width of the input to 100% of its container */
   max-width: 100%;
 }
 
+/* Define styles for elements with the class 'new-expense__actions' */
 .new-expense__actions {
+  /* Align text to the right within the container */
   text-align: right;
 }

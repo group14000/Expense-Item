@@ -1,9 +1,24 @@
+/* The following CSS styles are applied to elements with the class 'chart' */
+
 .chart {
-    padding: 1rem;
-    border-radius: 12px;
-    background-color: #f8dfff;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
-    height: 10rem;
-  }
+  /* Add padding around the element */
+  padding: 1rem;
+
+  /* Apply rounded corners with a radius of 12 pixels */
+  border-radius: 12px;
+
+  /* Set the background color to a light purple */
+  background-color: #f8dfff;
+
+  /* Center the text horizontally within the element */
+  text-align: center;
+
+  /* Display the child elements of 'chart' as a flex container */
+  display: flex;
+
+  /* Distribute the space around the child elements evenly horizontally */
+  justify-content: space-around;
+
+  /* Set a fixed height of 10 rem (relative to font size) for the element */
+  height: 10rem;
+}

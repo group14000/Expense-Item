@@ -1,9 +1,15 @@
+/* Define styles for elements with the class 'expenses-list' */
 .expenses-list {
+  /* Remove the default list-style (bullet points) and padding from the element */
   list-style: none;
   padding: 0;
 }
 
+/* Define styles for elements with the class 'expenses-list__fallback' */
 .expenses-list__fallback {
+  /* Set the text color to white */
   color: white;
+
+  /* Center-align text within the element */
   text-align: center;
 }
